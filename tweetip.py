@@ -10,6 +10,7 @@ import urllib.request as ur
 from time import time
 import os.path
 import sys
+import socket
 
 homedir = os.path.expanduser('~')
 twitteripdir = '.twitterip'
@@ -42,7 +43,7 @@ getTime = int(time())
 if len(sys.argv)>1:
     hostname = sys.argv[1]
 else: 
-    hostname = 'pi'
+    hostname = socket.gethostname()
 
 tweet = hostname + ":" + getip + ":" + str(getTime)
 
