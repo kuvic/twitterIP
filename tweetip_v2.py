@@ -2,7 +2,7 @@
 '''
 Created on Mar 7, 2014
 
-@author: sotiris
+@author: sotiris 2
 '''
 ## testing
 from twython import Twython
